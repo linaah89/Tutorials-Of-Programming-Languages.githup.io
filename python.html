@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Python</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        span {
+            background-color: #ffe6ee;
+            height: 200px;
+            width: 550px;
+        }
+
+        table,
+        td {
+            border: solid white 2px;
+            border-collapse: collapse;
+            margin: 2px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h1 class="title">Tutorials Of Programming Languages</h1>
+    <div class="Nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#" onclick="openNav()">Lessons</a></li>
+            <li><a href="sign_in.html">Sign In</a></li>
+            <li><a href="Reg.php">Sign Up</a></li>
+            <li><a href="mailto:somine@gmail.com" id="contactUs">Contact Us</a></li>
+        </ul>
+    </div>
+    <h1 id="header">Python Tutorial For Beginners</h1>
+    <div id="mySidenav" class="sidenav">
+        <nav>Menu
+            <ul>
+                <a href="home.html" id="homepage">Home</a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#intro">Introduction</a>
+                <a href="#le"> Environment</a>
+                <a href="#comm"> Comments</a>
+                <a href="#vari"> Variables</a>
+                <a href="#dt"> Data Types</a>
+                <a href="#ifst">If Statement</a>
+                <a href="#loop">Loops</a>
+                <a href="#fun">Functions</a>
+                <a href="#ref">References</a>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <ol>
+            <div id="introduction">
+                <h1>
+                    <li id="intro">Introduction</li>
+                </h1>
+
+                <p>What is Python? <br>
+                    <!--What is Python? https://www.python.org/doc/essays/blurb/-->
+                    Python is an interpreted, object-oriented and high-level programming language with dynamic
+                    semantics.
+                </p>
+            </div>
+            <div id="enviroment">
+                <h1>
+                    <li id="le">Language Environment</li>
+                </h1>
+                <!--http://www.python-ds.com/python-environment-->
+                <p>Python enables you to start coding once you installed it.
+                    This makes it easy for beginners to start learning Python without
+                    having to learn how to configure a development environment first.<br>
+                    The default installation of Python includes the Python interpreter,
+                    and its own Integrated Development Environment (IDE) called IDLE.<br>
+                    We recommend you to download PyCharm CE. Steps for downloading it in the next video.</p>
+                <p><iframe width="560" height="315" src="https://www.youtube.com/embed/SZUNUB6nz3g" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></p>
+            </div>
+            <div id="comment">
+                <h1>
+                    <li id="comm">Python Comments</li>
+                </h1>
+                <ul>
+                    <!--https://www.w3schools.com/python/python_comments.asp-->
+                    <li>Single Line Comment:</li>
+                    <img src="single.png" alt="Single Line Comment">
+                    <li>Multiple Line Comments:</li>
+                    <img src="multi.png" alt="Multiple Line Comments">
+                </ul>
+            </div>
+            <div id="variable">
+                <h1>
+                    <li id="vari">Python Variables</li>
+                </h1>
+                <!--https://www.w3schools.com/python/python_variables.asp-->
+                <p>Unlike other programming languages, Python has no command for declaring a variable.</p>
+                <ul>
+                    <li>A variable is created the moment you first assign a value to it.</li>
+                    <img src="Ex1.png" alt="variable created with diffrent name">
+                    <li>A variables do not need to be declared with any particular type, and can even change type after
+                        they
+                        have been set.</li>
+                    <img src="Ex2.png" alt="variable created with same name">
+
+                </ul>
+            </div>
+
+            <div id="data_types">
+                <h1>
+                    <li id="dt">Python Data Types</li>
+                </h1>
+                <!-- Example and type from: https://www.w3schools.com/python/python_datatypes.asp
+        decription from: https://medium.com/@shawnren527/learn-about-python-3-data-types-numbers-and-strings-76c75a917c9b-->
+                <table border="2">
+                    <p>In Python, the data type is set when you assign a value to a variable:</p>
+                    <caption>Setting the Data Type</caption>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Example</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>int</td>
+                            <td>x = 20</td>
+                            <td>Whole numbers</td>
+                        </tr>
+                        <tr>
+                            <td>float</td>
+                            <td>x = 20.50</td>
+                            <td>Numbers with a decimal point </td>
+                        </tr>
+                        <tr>
+                            <td>str</td>
+                            <td>x = "Hello World"</td>
+                            <td>Ordered sequence of characters</td>
+                        </tr>
+                        <tr>
+                            <td>list</td>
+                            <td>x = ["apple", "banana", "cherry"]</td>
+                            <td>Ordered sequence of objects</td>
+                        </tr>
+                        <tr>
+                            <td>set</td>
+                            <td>x = {"apple", "banana", "cherry"}</td>
+                            <td>Unordered collection of unique objects </td>
+                        </tr>
+                        <tr>
+                            <td>bool</td>
+                            <td>x = True</td>
+                            <td>Logical value indicating True or False</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <div id="if_st">
+                <h1>
+                    <li id="ifst">If Statement</li>
+                </h1>
+                <!--https://www.w3schools.com/python/python_conditions.asp-->
+                <p>Python relies on indentation which is whitespace at the beginning of a line to define scope in the
+                    code.</p>
+                <ul>
+                    <h3>
+                        <li>If statement:</li>
+                    </h3>
+                    <img src="if.png" alt="if statement example">
+                    <h3>
+                        <li>Elif statement:
+                    </h3>
+                    <p>The elif keyword is pythons way of saying "if the previous conditions were not true, then try
+                        this
+                        condition".</p>
+                    </li>
+                    <img src="elif.png" alt="elif statement example">
+                    <h3>
+                        <li>Else statement:
+                    </h3>
+                    <p>The else keyword catches anything which isn't caught by the preceding conditions.</p>
+                    </li>
+                    <img src="else.png" alt="else statement example">
+                    <h3>
+                        <li>Short hand if statement:
+                    </h3>
+                    <p>If you have only one statement to execute, one for if, and one for else, you can put it all on
+                        the
+                        same line:</p>
+                    </li>
+                    <img src="shortif.png" alt="Short hand if statement example">
+                </ul>
+            </div>
+            <div id="loops">
+                <h1>
+                    <li id="loop">Loops</li>
+                </h1>
+                <!--https://www.learnpython.org/en/Loops-->
+                <ul>
+
+
+                    <h3>
+                        <li>The for loop</li>
+                    </h3>
+
+                    <ul>
+                        <li>For loops iterate over a given sequence:
+                            <br>
+                            <img src="fornumb.png" alt="for loop examble" width="618px">
+                        </li>
+                        <li>For loops can iterate over a sequence of numbers using the range:
+                            <br>
+                            <img src="forrange.png" alt="for loop using range examble" width="618px">
+                        </li>
+
+                    </ul>
+                    <h3>
+                        <li>The while loop</li>
+                    </h3>
+                    <img src="whileloop.png" alt="while loop examble">
+                </ul>
+            </div>
+
+
+
+
+            <div id="function">
+                <h1>
+                    <li id="fun">Functions</li>
+                </h1>
+                <!--https://www.tutorialspoint.com/python/python_functions.htm-->
+                <ul>
+                    <h3>
+                        <li>Syntax: </li>
+                    </h3>
+                    <img src="synfun.png" alt="Syntax of Functions">
+                    <h3>
+                        <li>Example: </li>
+                    </h3>
+                    <img src="exfun.png" alt="Example of Functions">
+                </ul>
+            </div>
+            <div id="references">
+                <h1>
+                    <li id="ref">References</li>
+                </h1>
+                <ul>
+                    <li> <a href="https://www.python.org/doc/essays/blurb/">Python</a></li>
+                    <li> <a href="https://www.w3schools.com/">W3schools</a></li>
+                    <li> <a href="https://www.learnpython.org/">Learnpython</a></li>
+                    <li> <a href="https://www.tutorialspoint.com/python/python_functions.htm">TutorialsPoint</a></li>
+                </ul>
+            </div>
+        </ol>
+        <br>
+    </div>
+    </div>
+    <footer>Project CS438</footer>
+</body>
+
+</html>

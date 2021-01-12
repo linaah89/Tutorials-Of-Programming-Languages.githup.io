@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>HTML</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+        <script src="app.js"></script>
+    </head>
+    <body>
+    <h1 class="title">Tutorials Of Programming Languages</h1>
+    <div class="Nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#" onclick="openNav()">Lessons</a></li>
+            <li><a href="sign_in.html">Sign In</a></li>
+            <li><a href="Reg.php">Sign Up</a></li>
+            <li><a href="mailto:somine@gmail.com" id="contactUs">Contact Us</a></li>
+        </ul></div>
+    <h1 id="header">HTML tutorial For Beginners</h1>
+        <div id="mySidenav" class="sidenav">
+            <a href="home.html" id="homepage">Home</a>
+            <a href="htmlpage:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#introduction">Introduction</a>
+            <a href="#enviroment">Environment</a>
+            <a href="#basic">Basic </a>
+            <a href="#comment">Comments </a>
+            <a href="#heading">Heading</a>
+            <a href="#paragraph">Paragraph</a>
+            <a href="#Text_Styling">Text Styling</a>
+            <a href="#Links">Links</a>
+            <a href="#Images">Images</a>
+           <a href="#references">References</a>
+          </div>
+        <div class="content">
+        <div id="introduction">
+        <p><h1>Inroduction</h1>
+            HTML stands for Hyper Text Markup Language, is the standard markup language for creating Web pages.
+            HTML describes the structure of a Web page. It is consists of a series of elements. Each element tell the browser how to display the content.
+            HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.<br>
+            An HTML element is defined by a start tag, some content, and an end tag:<br>
+            &lt; tagname &gt; Content goes here...&lt;tagname&gt; <br>
+            The HTML element is everything from the start tag to the end tag:<br>
+            &lt; h1&gt; My First Heading &lt;h1&gt;
+        </p>
+         </div>
+         <div id="enviroment">
+        <p><h1>Language Enviroment</h1>
+            Web pages can be created and modified by using professional HTML editors.However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).
+            We believe in that using a simple text editor is a good way to learn HTML. Follow the fillowing video to learn how use text editor to write html code:<br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wXn--S_NKoE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+        </div>
+        <div id=basic>
+        <p><h1>Basic</h1>
+            All HTML documents must start with a document type declaration: &lt;!DOCTYPE html&gt; that represents the document type, and helps browsers to display web pages correctly.<br>
+            The HTML document itself begins with &lt;html&gt; and ends with &lt;/html&gt;.<br>
+            The visible part of the HTML document is between &lt;body&gt; and &lt;/body&gt;.<br>
+            The follwoung image represent the basic elemnt in html code:<br>
+            <img src="basic.png">
+        </p>
+        </div>
+        <div id="comment">
+        <p><h1>Comments</h1>
+            You can add comments to your HTML source by using the following syntax:<br>
+            &lt;!&ndash; &ndash; write your comment &ndash; &ndash;&gt;
+        </p>
+        </div>
+        <div id="heading">
+        <p><h1>Heading</h1>
+            HTML headings are titles or subtitles that you want to display on a webpage.
+            HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.
+            &lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading. <br>
+            <img src="head.png"><br>
+            The result is:<br>
+            <img src="reshead.png">
+        </p>
+         </div>
+         <div id="paragraph">
+        <p><h1>Paragraph</h1>
+            The HTML &lt;p&gt; element defines a paragraph.
+            A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.<br>
+            <img src="parg.png"><br>
+            The result is:<br>
+            <img src="resparg.png">
+        </p>
+         </div>  
+         <div id="Text_Styling">
+        <p><h1>Text Styling</h1>
+            HTML contains several elements for defining text with a special meaning.<br>
+            <ol>
+             Formatting elements were designed to display special types of text:
+                <li>&lt;b&gt; Bold text</li>
+                <li>&lt;strong&gt; Important text</li>
+                <li>&lt;i&gt; Italic text</li>
+            </ol>
+            A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.<br>
+            <img src="for.png"><br>
+            The result is:<br>
+            <img src="resfor.png">
+        </p>
+         </div>
+         <div id="Links">
+             <p><h1>Links</h1>
+                HTML links are hyperlinks. You can click on a link and jump to another document. When you move the mouse over a link, the mouse arrow will turn into a little hand.
+                The HTML &lt;a&gt; tag defines a hyperlink. It has the following syntax:<br>
+                &lt;a href="url"&gt;link text&lt;/a&gt;<br>
+                By default, links will appear as follows in all browsers:<br>
+                <ul>
+                    <li>An unvisited link is underlined and blue</li>
+                    <li>A visited link is underlined and purple</li>
+                    <li>An active link is underlined and red</li>
+                </ul>
+            </p>
+         </div>
+        <div id="Images">
+            <p><h1>Images</h1>
+                The HTML &lt;img&gt; tag is used to embed an image in a web page. Images are not technically inserted into a web page; images are linked to web pages. The &lt;img&gt; tag creates a holding space for the referenced image.
+                The &lt;img&gt; tag is empty, it contains attributes only, and does not have a closing tag.<br>
+                The HTML &lt;img&gt; has the following syntax:<br>
+                &lt;img src="url" alt="alternatetext"&gt; <br>
+                The &lt;img&gt; tag has two required attributes:<br>
+               <ul>
+                   <li>src - Specifies the path to the image</li>
+                   <li>alt - Specifies an alternate text for the image</li>
+               </ul>
+           </p>
+        </div>
+         <div id="references">
+            <p><h1>Reference</h1>
+                <li><a href="https://www.w3schools.com/html/">W3schools</a></li>
+            </p>
+             </div> 
+        </div>
+        <footer>Project CS438</footer>
+    </body>
+</html>

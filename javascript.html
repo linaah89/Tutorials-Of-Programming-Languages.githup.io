@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Java Script</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        span {
+            background-color: #ffe6ee;
+            height: 200px;
+            width: 550px;
+        }
+
+        table,
+        td {
+            border: solid white 2px;
+            border-collapse: collapse;
+            margin: 2px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+    </style>
+    <script src="app.js"></script>
+</head>
+
+<body>
+<h1 class="title">Tutorials Of Programming Languages</h1>
+<div class="Nav">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#" onclick="openNav()">Lessons</a></li>
+        <li><a href="sign_in.html">Sign In</a></li>
+        <li><a href="reg.php">Sign Up</a></li>
+        <li><a href="mailto:somine@gmail.com" id="contactUs">Contact Us</a></li>
+    </ul></div>
+    <h1 id="header">JavaScript Tutorial For Beginners</h1>
+    <div id="mySidenav" class="sidenav">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#introduction">Introduction</a>
+        <a href="#enviroment">Environment</a>
+        <a href="#comment">Comments </a>
+        <a href="#variable">Variables</a>
+        <a href="#data_types">Data Types</a>
+        <a href="#if_st">If statement</a>
+        <a href="#loops">Loops</a>
+        <a href="#function">Functions</a>
+        <a href="#references">References</a>
+
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+
+
+
+
+    <div class="content">
+
+        <ol>
+            <div id="introduction">
+                <h1>
+                    <li>Introduction
+                </h1>
+                </li>
+                What is JavaScript?and why it is always connected to websites?
+                JS is an object orinted programming language that is build to add responsive and dynamic contents
+                to the web pages.
+            </div>
+
+            <div id="enviroment">
+                <h1>
+                    <li>Language enviroemnt
+                </h1>
+                </li>
+                <p>
+                    To write JS code, you just need to have a browser and any text editor.JS code also can be written
+                    inside
+                    the HTML file.we recommend you to download Visual Studio Code(VSC) to use it in
+                    this tutorial.Steps for downloading VSC in the following vedio. </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KpzkPlh_HsU" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div id="comment">
+                <h1>
+                    <li>JS comments
+                </h1>
+                </li>
+                <p>Comments help you to understand your program and also help the others who going to read
+                    your code.
+                </p>
+                <ul>
+                    <li>Single Line comment</li>
+                    <img src="singleLineComment.png">
+                    <li>Multiple lines comments</li>
+                    <img src='multipleLinesComment.png'>
+                </ul>
+            </div>
+
+            <div id="variable">
+                <h1>
+                    <li>JS variables
+                </h1>
+                </li>
+                <label>You can declare any variable with three keywords:</label>
+                <ul>
+                    <li>
+                        <h3>var</h3>
+                    </li>
+                    <img src="var.png">
+                    <li>
+                        <h3>let</h3>
+                    </li>
+                    <p>
+                        <img src="let.png" alt="">
+                    </p>
+                    <span class="note">Note:var and let are used for the same purpose</span>
+                    <li>
+                        <h3>const</h3>
+                    </li>
+                    <p>const is reffer to 'constant', you can use it if you have a constant variable
+                        that not change entire the program.</p>
+                    <p>
+                        <img src="const.png" alt="">
+                    </p>
+
+                </ul>
+            </div>
+
+            <div id="data_types">
+                <h1>
+                    <li>JS Data Types
+                </h1>
+                </li>
+                JS known as dynamic typed or lossely typed language, that means the variable can change its type
+                during the program excution.
+                <table>
+                    <thead>
+                        <th>Type</th>
+                        <th>example</th>
+                        <th>description</th>
+                    </thead>
+                    <tr>
+                        <td>Undefind</td>
+                        <td>var x;</td>
+                        <td>when we do not assign any value to a variable, the compiler assign it to undefind type</td>
+                    </tr>
+                    <tr>
+                        <td>Number</td>
+                        <td>ver x=90;</td>
+                        <td>type number specify any numercial value</td>
+                    </tr>
+                    <tr>
+                        <td>Boolean</td>
+                        <td>var x=true;</td>
+                        <td>Boolean value have to options:true or false;</td>
+
+                    </tr>
+                    <tr>
+                        <td>String</td>
+                        <td>var x="Sarah";</td>
+                        <td>String type is any thing inside ("")</td>
+                    </tr>
+                    <tr>
+                        <td>Array</td>
+                        <td>var x=[1,2,3];</td>
+                        <td>array can holds several and different values inside its indecies</td>
+                    </tr>
+                    <tr>
+                        <td>Object</td>
+                        <td>var x={name:"unknown",age0};</td>
+                        <td>object type is semillar to array but we cannot access its element by index</td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div id="if_st">
+                <h1>
+                    <li>if statement
+                </h1>
+                </li>
+                <p>if statment change the program flow under specific conditions.The syntax of the if statment
+                    is semillar to many language like Java,C++ and more.</p>
+                <ul>
+                    <li>Syntax</li>
+                    <p>
+                        <img src="if_else_syntax.png" alt="">
+                    </p>
+                    <li>Example</li>
+                    <p><img src="if_else_example.png" alt=""></p>
+                </ul>
+            </div>
+
+            <div id="loops">
+                <h1>
+                    <li>Loops
+                </h1>
+                </li>
+                <p>
+                    loops are helpful when we have a repeatde execution.instead of writing the code several times,
+                    we can write it inside a loop. The loop will repeat the code execution under specific condition.
+                    JS have many forms of loops, in this tutorial we only dicover 4 forms of loops which are:For,for in
+                    , while and do while.
+                </p>
+                <ul>
+                    <li>
+                        <h3>for Loop</h3>
+                    </li>
+                    <p> for loop is used when we have a specific number of iterations(such as number of indeces in
+                        array)</p>
+                    <ul>
+                        <li>
+                            <h3>syntax</h3>
+                        </li>
+                        <p>
+                            <img src="for_loop_syntax.png" alt="">
+                        </p>
+                        <li>
+                            <h3>example</h3>
+                        </li>
+                        <p>
+                            <img src="for_loop_example.png" alt="">
+                        </p>
+                    </ul>
+
+                    <li>
+                        <h3>for in</h3>
+                    </li>
+                    <p>for in is used to access ojcets elemnts(we do not know the number of iterations)</p>
+                    <ul>
+                        <li>
+                            <h3>syntax</h3>
+                        </li>
+                        <p>
+                            <img src="for_in_syntax.png" alt="">
+                        </p>
+                        <li>
+                            <h3>example</h3>
+                        </li>
+                        <p>
+                            <img src="for_in_example.png" alt="">
+                        </p>
+                    </ul>
+
+                    <li>
+                        <h3>while</h3>
+                    </li>
+                    <p>While loop also used when we do not know the number of iterations.However, while loop and do
+                        while not work with object elements.
+                    </p>
+                    <ul>
+                        <li>
+                            <h3>syntax</h3>
+                        </li>
+                        <p>
+                            <img src="whileS.png" alt="">
+                        </p>
+                        <li>
+                            <h3>example</h3>
+                        </li>
+                        <p>
+                            <img src="whileE.png" alt="">
+                        </p>
+                    </ul>
+
+                    <li>
+                        <h3>do while</h3>
+                    </li>
+                    <p>
+                        do while always excute the loop section at least one time!beacuse the condition become
+                        after the comands section.In other hand, if in while loop or in for/for in there is n
+                        iterations, in do while there is n+1 iterations.
+                    </p>
+                    <ul>
+                        <li>
+                            <h3>syntax</h3>
+                        </li>
+                        <p>
+                            <img src="doWhileS.png" alt="">
+                        </p>
+                        <li>
+                            <h3>example</h3>
+                        </li>
+                        <p>
+                            <img src="doWhileE.png" alt="">
+                        </p>
+                    </ul>
+
+                </ul>
+            </div>
+
+            <div id="function">
+                <h1>
+                    <li>Functions
+                </h1>
+                </li>
+                <p>Functions are subprograms or(block of code)that perform speciifc functionality.there are different
+                    Types
+                    of function, built in function and user defind function.Bualt in functions are already exists with
+                    the language itself such as Math.random() and cannot be manipulated.This function return a randoom
+                    number between 0 and 1.user defind
+                    functions are function that programmer can create and also manipulate it.
+                </p>
+                <ul>
+                    <li>
+                        <h3>syntax</h3>
+                    </li>
+                    <p>
+                        <img src="functionS.png" alt="">
+                    </p>
+                    <li>
+                        <h3>example(user defind functions)</h3>
+                    </li>
+                    <p>
+                        <img src="functionE.png" alt="">
+                    </p>
+                </ul>
+
+            </div>
+
+            <div id="references">
+                <h1>
+                    <li>References
+                </h1>
+                </li>
+                <ul>
+                    <li><a href="https://www.w3schools.com/default.asp">W3schools</a></li>
+                    <li> <a href="https://developer.mozilla.org/en-US/">MDN</a></li>
+                </ul>
+            </div>
+        </ol>
+    </div>
+    </div>
+    <footer>Project CS438</footer>
+</body>
+
+</html>

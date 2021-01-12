@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Java</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <style>
+        span
+        {
+            background-color: #ffe6ee;
+            height: 200px;
+            width: 550px;
+        }
+        table, td
+            {
+                border:solid white 2px;
+                border-collapse:collapse;
+                margin:2px;
+                background-color:rgba(255,255,255,0.5);
+            }
+        
+    </style>
+        <script src="app.js"></script>
+    </head>
+    <body>
+    <h1 class="title">Tutorials Of Programming Languages</h1>
+    <div class="Nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#" onclick="openNav()">Lessons</a></li>
+            <li><a href="sign_in.html">Sign In</a></li>
+            <li><a href="Reg.php">Sign Up</a></li>
+            <li><a href="mailto:somine@gmail.com" id="contactUs">Contact Us</a></li>
+        </ul></div>
+        <h1 id="header">Java Tutorial For Beginners</h1>
+        <div id="mySidenav" class="sidenav">
+            <a href="home.html" id="homepage">Home</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#introduction">Introduction</a>
+            <a href="#enviroment">Environment</a>
+            <a href="#comment">Comments </a>
+            <a href="#variable">Variables</a>
+            <a href="#data_types">Data Types</a>
+            <a href="#if_st">If statement</a>
+            <a href="#loops">Loops</a>
+            <a href="#function">Functions</a>
+            <a href="#references">References</a>
+
+          </div>
+
+          
+        <div class="content">
+            <ol>
+                <div id="introduction">
+                      <h1><li>Introduction</li></h1>
+                      Java is a high-level language, which is a development of the C++ language,
+                      and it is considered one of the languages ​​that support object-oriented programming.
+                      It has more restrictions on data types than others, but it is characterized by 
+                     a large number of libraries that help you while writing the code .It is a good idea to start learning Java!
+                </div>
+                <div id="enviroment">
+                    <h1><li>Language Environment</h1></li>
+                    <p>
+                        There are a number of platforms for writing Java code. We recommend using NetBeans. You need to download your JDK  
+                        before downloading the NetBeans.<br>
+                        You can watch the video to explain how to download:
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EkjEkFq9ojI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                </div>
+                <div id="comment"> 
+                    <h1><li> comments </li></h1>
+                    <p>the comment in code is make the code more readable .and easy to develop by other one .<br>
+                       there is 2 type for comment in singal line by <em>// two forward slashes </em> or multiple line by<em>/* to start comment */ to end comment </em>:<br></p> 
+                       <li>Example1</li>
+                       <p>      <img src="comment_singal_line.png" height="100px" width="695px" alt="Comment in singal line"></p>
+                       <li>Example2</li>
+                      <p>      <img src="comment_multi_line.png" height="100px" width="695px" alt="Comment in multi_ine"></p>
+                </div>
+                <div id="variable">
+                    <h1><li> variables</h1></li>
+                    <label>Naming variables</label>
+                there are rules for naming the variable in java :
+                <ul>
+             
+                    <li>It can start a name for a variable  with a <em><strong> letter , $  ,or _ ,</strong></em>  otherwise, it is not allowed </li>
+                    <li>It can contain <em><strong> letters , $  , digits,or _ ,</strong></em>otherwise, it is not allowed </li>
+                    <li>The names are case-sensitive, meaning that <em><strong> Apple and apple </strong></em> are two different variables.</li>
+                    <li>There are 51  <em><strong>reserved words</strong></em> in the Java programming language. You cannot name the variables by one of these words. Reserved words are words that have a prior meaning in the language. 
+                        You can visit this site to review reserved words in the Java<a href="https://en.wikipedia.org/wiki/List_of_Java_keywords">List of Reserved Words</a></li>
+                </ul>
+                 <li>Example1</li> 
+                 <p>     <img src="NamingVaraible.png" height="240px" width="695" alt="Example name of variable"></p>
+
+                </div>
+                <div id="data_types"> 
+                    <h1><li> Data Types</h1></li>
+                    Data type It means the type of data stored in the variable.
+                    There are a number of data permitted in the Java language.<br><br>
+                    <table >
+                        <caption>Primative data type</caption>
+                        <thead>
+                            <tr>
+                                <th>Data type </th> <th>Example</th><th>Description</th>
+                            </tr>
+        
+                        </thead>
+                        <tbody>
+                            <tr><td> Byte </td><td>Byte Number = 126;</td><td>Can store  integers numbers consist of 8 bit (-128 to 127)</td></tr>
+                            <tr><td> Short </td><td>Short Number = 30,000;</td><td>Can store  integers numbers consist of 16 bit (-32,768 to 32,767)</td></tr>
+                            <tr><td> int </td><td>int Number = 1,147,483,647;</td><td>Can store  integers numbers consist of 32 bit (-2,147,483,648 to 2,147,483,647)</td></tr>
+                            <tr><td> long </td><td>long Number = 1,147,483,647l;</td><td>Can store  integers numbers consist of 64 bit ( -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)</td></tr>
+                            <tr><td> float </td><td>float Number = 126.888f;</td><td>Can store fraction numbers of 32 bit such as 126.987f </td></tr>
+                            <tr><td> double </td><td>double Number = 50.98794d;</td><td>Can store fraction numbers of 64 bit such as 50.98794d</td></tr>
+                            <tr><td> boolean </td><td>boolean check = true ;</td><td>Can store two values either True or false </td></tr>
+                            <tr><td> char </td><td>char a = 'A' ;</td><td>Can store  character/letter or ASCII values </td></tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <div id="if_st">
+                        <h1> <li>if statement</h1></li>
+                        <strong>If statement,</strong>  use if you need a specific action for a specific case (if you are hungry eat rice, if you are not hungry eat an apple).<br>
+                        There are two ways to write a conditional statement depending on the number of operands in condition :Binary and Ternary Operator.
+                        <ul>
+                            <li> <strong>Binary Operator </strong> <br>
+                            <img src="If_Statment.png" height="241px" width="695px" alt="Example (if else statment)"> 
+                            </li>
+                            <li><strong>Ternary Operator </strong> <br>
+                            <img src="IF_Else_Statment.png" height="139px" width="695px" alt="Example (if else statment)">
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="loops">
+                        <h1><li>Loops</h1></li>
+                        Loops are the concept of repetition. Repetition to execution, printing, 
+                         in the general repetition of any blook of statement. 
+                        <h4>the types of loops </h4>
+                        <ol>
+                            <li><strong>while</strong> use when you want repeat depends on specific the condition. (while this condition is true, repeat) .The condition is checked before entering the loop body.
+                            <ul>
+                                <li><strong>Syntax</strong> <br> <img src="while_syntax.png" width="695px" height="100px"></li>
+                                <li><strong>Example</strong> <br> <img src="while_example.png" width="695px" height="100px"></li>
+                            </ul> </li>
+
+                            <li><strong>do while </strong>use when you want repeat depends on specific the condition. (do until the condition become false ) .The first iteration loop is performed before the condition is checked.
+                                <ul>
+                                    <li><strong>Syntax</strong><br><img src="Do_While_Syntax.png" width="695px" height="120px"></li>
+                                    <li><strong>Example</strong><br><img src="Do_While_Example.png" width="695px" height="150px"></li>
+
+                                </ul> </li>
+                                <li><strong> For loop</strong> use when you know the number of iteration.
+                                <ul>
+                                    <li><strong>Example</strong><br><img src="For_loop_example.png" width="695px" height="93px"></li>
+                                </ul> </li>
+                        </ol>
+                    </div>
+                    <div id="function">
+                        <h1> <li>Functions</h1></li>
+                        <strong>Function (Method )</strong>is a part of the program that performs a specific task , it helps with arranging the code and reducing its length.
+                        <ul>
+                            <li><strong>Method declaration</strong><br> <img src="Funcation.png" height="284px" width="695px" alt="sturactur of Funcation"><br>You can replace the return type with the keyword <strong>void</strong>
+                                 if you do not want to return a value from the method as shown in the next example <br>
+                                <img src="VoidFunction.png" height="100px" width="695px" alt="Example for Funcation">
+                            </li>
+                            <li><strong>Calling a method</strong><br>
+                                <img src="CallMethod.png" height="126px" width="695px" alt="Example for call Funcation"><br>
+                                <strong>method1</strong> has return type must call inside a variable to save return value<br>
+                                <strong>method2</strong> can call in anywhere because it does not return a value </li>
+                        </ul>
+             
+                    </div>
+                    <div id="references">
+                        <h1><li>References</h1></li>
+                        <ul>
+                            <li><a href="https://www.w3schools.com/default.asp">W3schools</a></li>
+                            <li> <a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a></li>
+                        </ul>
+                    </div>
+            </ol>
+        </div>
+        <footer>Project CS438</footer>
